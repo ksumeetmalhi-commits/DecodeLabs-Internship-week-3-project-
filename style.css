@@ -1,0 +1,169 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    transition: 0.5s;
+}
+
+
+/* Dark Mode */
+
+.dark{
+    background: #0f172a;
+    color: white;
+}
+
+
+/* Main Container */
+
+.container{
+    width: 90%;
+    max-width: 1000px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    text-align: center;
+    animation: slide 1s ease;
+}
+
+
+@keyframes slide{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Headings */
+
+h1{
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+
+#message{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+/* Boxes */
+
+.box{
+    background: rgba(255,255,255,0.25);
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+.box h2{
+    margin-bottom: 15px;
+}
+
+
+/* Buttons */
+
+button{
+    padding: 12px 22px;
+    margin: 8px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(45deg,#ff416c,#ff4b2b);
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+
+button:hover{
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+
+button:active{
+    transform: scale(0.95);
+}
+
+
+/* Counter & Number */
+
+#counter,
+#number{
+    font-size: 35px;
+    margin: 15px;
+    font-weight: bold;
+}
+
+
+/* Image */
+
+img{
+    width: 100%;
+    max-width: 650px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin-bottom: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+
+img:hover{
+    transform: scale(1.02);
+}
+
+
+/* Responsive */
+
+@media(max-width: 768px){
+
+    h1{
+        font-size: 28px;
+    }
+
+    #message{
+        font-size: 16px;
+    }
+
+    button{
+        width: 90%;
+        margin: 6px auto;
+        display: block;
+    }
+
+    img{
+        height: 230px;
+    }
+
+}

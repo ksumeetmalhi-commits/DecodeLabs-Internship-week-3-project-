@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 id="heading">🚀 Interactive Web Dashboard</h1>
+
+    <p id="message">
+        Welcome to my advanced JavaScript project!
+    </p>
+
+   
+    <section class="box">
+        <h2>🎨 Theme Controls</h2>
+
+        <button onclick="toggleDarkMode()">
+            🌙 Dark / Light Mode
+        </button>
+
+        <button onclick="changeBackground()">
+            🎨 Change Background
+        </button>
+
+        <button onclick="changeTextColor()">
+            🌈 Text Color
+        </button>
+
+        <button onclick="resetStyle()">
+            🔄 Reset Style
+        </button>
+    </section>
+
+
+   
+    <section class="box">
+
+        <h2>📝 Text Controls</h2>
+
+        <button onclick="changeHeading()">
+            ✏ Change Heading
+        </button>
+
+        <button onclick="showQuote()">
+            💬 Show Quote
+        </button>
+
+        <button onclick="showTime()">
+            ⏰ Date & Time
+        </button>
+
+        <button onclick="changeEmoji()">
+            😊 Change Mood
+        </button>
+
+    </section>
+
+
+  
+    <section class="box">
+
+        <h2>🔤 Font Controls</h2>
+
+        <button onclick="increaseFont()">
+            A+
+        </button>
+
+        <button onclick="decreaseFont()">
+            A-
+        </button>
+
+    </section>
+
+
+    
+    <section class="box">
+
+        <h2>🎲 Random Number Generator</h2>
+
+        <h3 id="number">0</h3>
+
+        <button onclick="generateNumber()">
+            Generate Number
+        </button>
+
+    </section>
+
+
+    
+    <section class="box">
+
+        <h2>🔢 Counter</h2>
+
+        <h3 id="counter">0</h3>
+
+        <button onclick="increaseCounter()">
+            ➕ Increase
+        </button>
+
+        <button onclick="decreaseCounter()">
+            ➖ Decrease
+        </button>
+
+        <button onclick="resetCounter()">
+            🔄 Reset
+        </button>
+
+    </section>
+
+
+   
+    <section class="box">
+
+        <h2>🖼 Image Gallery</h2>
+
+        <img id="image"
+        src="https://picsum.photos/700/400"
+        alt="Gallery Image">
+
+        <br>
+
+        <button onclick="previousImage()">
+            ⬅ Previous
+        </button>
+
+        <button onclick="nextImage()">
+            Next ➡
+        </button>
+
+        <button onclick="zoomIn()">
+            🔍 Zoom +
+        </button>
+
+        <button onclick="zoomOut()">
+            🔎 Zoom -
+        </button>
+
+    </section>
+
+
+    
+
+    <section class="box">
+
+        <h2>✨ Extra Features</h2>
+
+        <button onclick="welcomeMessage()">
+            🔔 Welcome Alert
+        </button>
+
+        <button onclick="playSound()">
+            🔊 Button Sound
+        </button>
+
+    </section>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
